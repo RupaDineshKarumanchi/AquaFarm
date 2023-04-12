@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "169689274276",
+    "project_id": "aquafarm-android",
+    "storage_bucket": "aquafarm-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169689274276:android:dbec8e0bfcb7c8a2821331",
+        "android_client_info": {
+          "package_name": "com.example.aquafarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169689274276-bu4pd2g8u60710eq4igkou3ca8roa0bf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aquafarm",
+            "certificate_hash": "339f25022b0c332d5f32ea86a8e0db6443dffbf4"
+          }
+        },
+        {
+          "client_id": "169689274276-upv9lnfkctd9hqmp9isljsffnekjv9v7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZfrbIyUbSVzw0PAbloKmtH5rkD96bNqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169689274276-upv9lnfkctd9hqmp9isljsffnekjv9v7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

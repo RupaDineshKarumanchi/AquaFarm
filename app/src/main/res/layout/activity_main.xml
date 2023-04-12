@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feed_usage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/logout"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/cyan"
+        app:backgroundTint="@color/light"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feed_stock" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/cyan"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/username"
+        android:textColor="@color/cyan"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/logo"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5sp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_vertical"
+                android:text="@string/aquafarm"
+                android:textColor="@color/cyan"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/add_new"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="64dp"
+        android:drawableTop="@drawable/plus"
+        android:paddingTop="16dp"
+        android:text="@string/add_new"
+        android:textColor="@color/cyan"
+        app:backgroundTint="@color/medium"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/feeding"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="64dp"
+        android:drawableTop="@drawable/feedbag"
+        android:paddingTop="16dp"
+        android:text="@string/feeding"
+        android:textColor="@color/cyan"
+        app:backgroundTint="@color/medium"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/feed_stock"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="64dp"
+        android:drawableTop="@drawable/stack"
+        android:paddingTop="16dp"
+        android:text="@string/feed_stock"
+        android:textColor="@color/cyan"
+        app:backgroundTint="@color/medium"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_new" />
+
+    <Button
+        android:id="@+id/growth"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="64dp"
+        android:drawableTop="@drawable/graph"
+        android:paddingTop="16dp"
+        android:text="@string/feed_usage"
+        android:textColor="@color/cyan"
+        app:backgroundTint="@color/medium"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feeding" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
